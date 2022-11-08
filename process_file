@@ -1,0 +1,101 @@
+#!/bin/sh
+
+# Author: Preston Pan
+# Date: 05/10/2022
+# Description: Script called from `find` in build.sh. $1 is the file that `find` is currently on.
+
+if [ $# -eq 0 ]; then
+	printf "Error: This script must be ran from a find command or build.sh!\n"
+	exit 1
+fi
+
+# This function recursively resolves the $$INCLUDE calls
+template_replacement()
+{
+	r_templates="$(< "$TEMPLATE_BUILD_DIR/$(basename "$1")" grep "\$\$INCLUDE")" # this is the future built version of our template.
+																				 # We are finding the $$INCLUDE lines.
+	if [ -z "$r_templates" ] # Base case of recursion: there are no more $$INCLUDE calls.
+	then
+		return 0
+	fi
+
+	echo "$r_templates" | while read -r i
+	do
+		# Escapes special characters from line containing $$INCLUDE call
+		keyword_regexp="$(printf '%s' "$i" | -e sed 's/[]\/$*.^|[]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+		r_tname="$TEMPLATE_DIR/$(echo "$i" | cut -d ' ' -f 2).html"
+		# Get contents of file then escapes special characters
+		f_contents="$(cat "$r_tname")"
+		replacement_regexp="$(printf '%s' "$f_contents" | sed -e 's/[\/&]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+		#Finally do the sed replace to replace the $$INCLUDE line with the contents of the included template file
+		sed -i "s/$keyword_regexp/$replacement_regexp/g" "$TEMPLATE_BUILD_DIR/$(basename "$1")" # BUG: This shit does not work
+		# Then we do it all again on the same file.
+		template_replacement "$1"
+	done
+}
+
+fname="$(basename "$1")" # gets the name of file in question
+if [ "${fname##*.}" != "html" ] # If it is not an html file, just copy it over to the build directory, the script does nothing.
+then
+	cp "$1" "$BUILD_DIR/$1"
+	exit 0
+fi
+
+# We want the first specified template to be the template
+template_name="$(< "$1" grep "\$\$TEMPLATE" | head -1)"
+
+
+# Location of the template that is to be built from template_replacement
+
+if [ -n "$template_name" ] # We get the path of the template and if no template is specified it uses the default.
+then
+	template="$TEMPLATE_DIR/$(echo "$template_name" | cut -d ' ' -f 2 | tr -d '\n').html"
+else
+	template="$DEFAULT_TEMPLATE"
+fi
+
+built_template="$TEMPLATE_BUILD_DIR/$(basename "$template")"
+template_replacement "$template" # replace all the $$TEMPLATE calls.
+
+vars="$(< "$1" grep "\$\$START")"
+
+# now we prepare to do the variable substitutions.
+cp "$built_template" "$BUILD_DIR/$1"
+
+echo "$vars" | while read -r var;
+do
+	# Get the name of the variable
+	name="$(echo "$var" | cut -d ' ' -f 2 | tr -d '\n')"
+	keyword_regexp="$(printf '%s' "$var" | sed -e 's/[]\/$*.^|[]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+	# Get the endpoint of the variable
+	var_end="\$\$END $name"
+	end_regexp="$(printf '%s' "$var_end" | sed -e 's/[\/&]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+	# Get the value of the variable
+	value="$(< "$BUILD_DIR/$1" sed -n "/$keyword_regexp/,/$end_regexp/p" "$1")"
+	value_regexp="$(printf '%s' "$value" | sed -e 's/[]\/$*.^|[]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+	# Get the string to replace
+	replacement="\$\$VAR $name"
+	replacement_regexp="$(printf '%s' "$replacement" | sed -e 's/[\/&]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+	# Then do the replacement
+	sed -i "s/$replacement_regexp/$value_regexp/g" "$BUILD_DIR/$1" # BUG: Doesn't work on openBSD
+done
+
+# For some reason I can't trim these inside the loop (i tried) so this works.
+sed -i '/\$\$START/d' "$BUILD_DIR/$1"
+sed -i '/\$\$END/d' "$BUILD_DIR/$1"
+
+debug="$(< "$BUILD_DIR/$1" grep "\$\$SCRIPT")"
+printf "$debug\n"
+
+if [ -n "$debug" ]
+then
+	echo "$debug" | while read -r line;
+	do
+		name="$(echo "$line" | cut -d ' ' -f 2 | tr -d '\n')"
+		output="$(./"$PLUG_DIR/$name" "$1" "$template")"
+		keyword_regexp="$(printf '%s' "$line" | sed -e 's/[]\/$*.^|[]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+		replacement_regexp="$(printf '%s' "$output" | sed -e 's/[\/&]/\\&/g' | sed ':a;N;$!ba;s,\n,\\n,g')"
+
+		sed -i "s/$keyword_regexp/$replacement_regexp/g" "$BUILD_DIR/$1" # BUG: doesn't work with openBSD
+	done
+fi
