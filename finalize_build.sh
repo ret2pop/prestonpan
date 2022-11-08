@@ -6,7 +6,7 @@ for i in $(find "$ROOT_DIR" -type f -name '*.html'); do
 	if [ "$(basename "$i")" = 'index.html' ];
 	then
 		sed -i -e 's|<!--BACKDIR-->|\| <a href="\.\./index\.html">Back</a>|g' "$i"
-	elif [ "$i" == "*.html" ]; then
+	else
 		sed -i -e 's|<!--BACKDIR-->|\| <a href="\./index\.html">Back</a>|g' "$i"
 	fi
 done;
