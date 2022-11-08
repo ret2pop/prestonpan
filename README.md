@@ -10,6 +10,11 @@ system.
 
 ## Building
 
+Run `./build.sh` with rsync installed.
+With an argument, that pushes to my server. Change
+the server and location if you want to use it for
+your own website.
+
 ## License
 
 See `LICENSE`.
