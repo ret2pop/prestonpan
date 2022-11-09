@@ -1,3 +1,0 @@
-#!/bin/sh
-
-tbl resume.ms -T pdf | groff -ms -T pdf > resume.pdf
