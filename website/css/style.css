@@ -130,7 +130,7 @@ pre {
 }
 
 p > a {
-  color: #a9b1d6;
+  color: #7aa2f7;
   text-decoration: none;
   font-size: 0.7em;
   padding: 3px 6px;
@@ -139,7 +139,7 @@ p > a {
 }
 
 p > a:hover {
-  color: #a9b1d6;
+  color: #7aa2f7;
   background-color: #565f89;
 }
 
