@@ -11,7 +11,7 @@ fi
 #
 if [ "$(basename "$1")" = 'index.html' ];
 then
-	printf '<a href="\.\./index\.html">Back</a>'
+	printf '<a href="../index.html">Back</a>'
 else
-	printf '<a href="\./index\.html">Back</a>'
+	printf '<a href="./index.html">Back</a>'
 fi
