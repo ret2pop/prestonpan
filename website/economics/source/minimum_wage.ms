@@ -32,7 +32,7 @@ confirmed the model specifically for minimum wage from a study that my student c
 solidifying my confidence in this claim.
 
 .LP
-.B "Paul Krugman"
+.B "Paul Krugman: "
 Well, I respect Milton Friedman but he's a little old school in his thinking. As for Mises,
 everything that he said was ideology and not falsifiable. It's just not the way we conduct
 science anymore, and any respectable economist would agree. We use the tools of empericism
@@ -64,3 +64,45 @@ Thanks for the opening statements! Now the floor goes to our participants.
 
 .LP
 .B "Mises: "
+It's all the same thing said in different ways, you all seem to think the economy can be organized
+or understood in an emperical or logical way, even though this is clearly not the case! The economy
+is made up of extremely complex transactions that form the larger economy. There is no way one
+algorithm or set of studies can ever conclude anything about such a chaotic system!
+
+.LP
+.B "Paul Krugman: "
+Then how do you suggest we conduct economics? Most other ways of conducting research seem to be
+unfalsifiable in nature. It seems to me that you're not actually interested in economics; you're
+interested in ideology, and you use any mechanism to push your ideology.
+
+.LP
+.B "Mises: "
+Ah, but same to you! You choose to study things that you want to craft a narrative about, and
+in economics, and the apperatus of the study can be used to craft any narrative you want, given
+that in economics, all the macro statistics may as well be random! The difference is that I don't
+claim to be falsifiable in a logical positivist sense. You do.
+
+.LP
+.B "Milton Friedman: "
+It seems, Mises, that you are mistaken. It doesn't matter if the model is accurate to reality; I
+do not claim to study reality. I claim to generate models that can predict movements in the
+economy, and so far, they have been powerful enough to explain history and even explain stagflation
+in the 70's. How do you conduct economics?
+
+.LP
+.B "Mises: "
+I conduct economics by understanding the axioms of human action. You conduct economics not by studying
+the macro economy; you understand it from micro foundations and build towards understanding the economy
+in the macro form. As for your models, it seems like confirmation bias at its finest. You choose what
+in history confirms your model, and ignore everything that does not confirm your model. It is the same
+with Mr. Wolff.
+
+.LP
+.B "Richard Wolff: "
+I am not like those neoclassical economists; yet, you must be blind to not see the progression of history.
+Additionally, you need not look at history. The exploitation of the worker in the present moment is very
+clear; CEOs that don't do any work make many times more than that of the average worker, who produces all
+goods and services in our economy. This is simply immoral.
+
+.LP
+.B "Paul Krugman: "

@@ -2,27 +2,32 @@
 	font-family: Liberation Mono;
 	src: url("/fonts/liberationmono-regular-webfont.woff") format("woff");
 }
+
 @font-face {
 	font-family: Liberation Mono;
 	src: url("/fonts/liberationmono-bold-webfont.woff") format("woff");
 	font-weight: bold;
 }
+
 @font-face {
 	font-family: Liberation Mono;
 	src: url("/fonts/liberationmono-italic-webfont.woff") format("woff");
 	font-style: italic;
 }
+
 @font-face {
 	font-family: Liberation Mono;
 	src: url("/fonts/liberationmono-bolditalic-webfont.woff") format("woff");
 	font-weight: bold;
 	font-style: italic;
 }
+
 * {
 	background-color: #1a1b26;
 	color: #acb0d0;
 	font-family: "Liberation Mono", monospace, cursive;
 }
+
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
@@ -35,10 +40,12 @@ body {
   display: inline;
   width: 60%;
 }
+
 .content {
 	width: 60%;
 	margin: 0 auto 25px;
 }
+
 .nav {
   margin-left: 0;
   margin-bottom: 0;
@@ -47,6 +54,7 @@ body {
 	width: 60%;
 	margin: 0 auto 25px;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height:100%;
@@ -54,9 +62,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
   max-width: 700px;
 }
+
 p {
   text-indent: 10px;
 }
+
 h1 {
 	color: #acb0d0;
 	text-align: center;
@@ -91,6 +101,7 @@ ul ul, ul ol, ol ol, ol ul {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 li {
 	margin: 0.3em auto;
 }
@@ -188,6 +199,7 @@ del {
 .justright {
 	text-align: right;
 }
+
 .justcenter {
 	text-align: center;
 }
@@ -216,6 +228,7 @@ del {
   background-position: 0 .2em;
   padding-left: 1.5em;
 }
+
 .done0 {
   /* list-style: none; */
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAxQAAAMUBHc26qAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAA7SURBVCiR7dMxEgAgCANBI3yVRzF5KxNbW6wsuH7LQ2YKQK1mkswBVERYF5Os3UV3gwd/jF2SkXy66gAZkxS6BniubAAAAABJRU5ErkJggg==);
@@ -223,18 +236,21 @@ del {
   background-position: 0 .2em;
   padding-left: 1.5em;
 }
+
 .done1 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAxQAAAMUBHc26qAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABtSURBVCiR1ZO7DYAwDER9BDmTeZQMFXmUbGYpOjrEryA0wOvO8itOslFrJYAug5BMM4BeSkmjsrv3aVTa8p48Xw1JSkSsWVUFwD05IqS1tmYzk5zzae9jnVVVzGyXb8sALjse+euRkEzu/uirFomVIdDGOLjuAAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
   background-position: 0 .15em;
   padding-left: 1.5em;
 }
+
 .done2 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAxQAAAMUBHc26qAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB1SURBVCiRzdO5DcAgDAVQGxjAYgTvxlDIu1FTIRYAp8qlFISkSH7l5kk+ZIwxKiI2mIyqWoeILYRgZ7GINDOLjnmF3VqklKCUMgTee2DmM661Qs55iI3Zm/1u5h9sm4ig9z4ERHTFzLyd4G4+nFlVrYg8+qoF/c0kdpeMsmcAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   background-position: 0 .15em;
   padding-left: 1.5em;
 }
+
 .done3 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAxQAAAMUBHc26qAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABoSURBVCiR7dOxDcAgDATA/0DtUdiKoZC3YhLkHjkVKF3idJHiztKfvrHZWnOSE8Fx95RJzlprimJVnXktvXeY2S0SEZRSAAAbmxnGGKH2I5T+8VfxPhIReQSuuY3XyYWa3T2p6quvOgGrvSFGlewuUAAAAABJRU5ErkJggg==);
   background-repeat: no-repeat;
@@ -257,9 +273,9 @@ code {
   background-clip: padding-box;
   padding: 0px 3px;
   display: inline-block;
-  color: #52595d;
+  color: #9ece6a;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: ##565f89;
 }
 
 footer {
@@ -267,12 +283,14 @@ footer {
 	width: 60%;
 	margin: 0 auto 25px;
 }
+
 .crypto {
 	color: white;
 	background-color: transparent;
 	white-space: pre-wrap ~important;
 	border: none;
 }
+
 .crypto-pre {
 	overflow-x: auto;
 	padding: 1rem;
@@ -299,28 +317,35 @@ footer {
 	.content {
 		width: 90%;
 	}
+
 	.nav {
 		font-size: 14px;
 		width: 90%;
 	}
+
 	p {
 		font-size: 0.8em;
 	}
+
 	ul {
 		font-size: 0.8em;
 	}
+
 	ol {
 		font-size: 0.8em;
 	}
+
 	h1 {
 		font-size: 20px;
 	}
+
 	h2 {
 		font-size: 18px;
 	}
 	h3 {
 		font-size: 16px;
 	}
+
 	footer {
 		width: 90%;
 	}
