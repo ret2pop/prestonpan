@@ -63,7 +63,7 @@ T}
 .QS
 .B "Note "
 \(en
-.I "All my project's source code are available on "
+.I "All my projects have their respective soure code avaiable at "
 .UL "https://git.prestonpan.tech".
 .BL
 .B "The Null Webring"
@@ -104,18 +104,25 @@ systems.
 .BL
 .B "Programming Languages"
 \(en
-c, python, shell, x86 assembly, and HTML/css/Javascript.
+I have good knowledge of c, python, shell, x86 assembly, and HTML/css/Javascript.
 .BL
 .B "Development tools"
 \(en
 Knowledge of standard collaborative development tools (command line git, writing UNIX man pages, using build systems like make/cmake/autotools)
 as well as writing papers in LaTeX and roff.
 .BL
-.B "Mathematics/Physics"
+.B "Mathematics"
 \(en
 I have knowledge of mathematics up to about a 3rd year university level due to self study, and have gotten distinction in mathematics
 contests such as the Fermat Waterloo math competition (knowledge of multivariable calculus, linear algebra, discrete mathematics,
 and ordinary differential equations, among other topics).
+.BL
+.B "Physics"
+\(en
+Aside from the mathematics which is of course a very important skill in physics, I have done self study on many advanced
+university level topics such as electrodynamics and kinematics from a multivariable calculus perspective. I am also working
+with two classmates on a completely novel grand unified theory of physics, which will be published on my website when it
+is done.
 .BL
 .B "Music"
 \(en
