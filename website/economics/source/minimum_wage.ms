@@ -35,10 +35,10 @@ solidifying my confidence in this claim.
 .B "Paul Krugman: "
 Well, I respect Milton Friedman but he's a little old school in his thinking. As for Mises,
 everything that he said was ideology and not falsifiable. It's just not the way we conduct
-science anymore, and any respectable economist would agree. We use the tools of empericism
+science anymore, and any respectable economist would agree. We use the tools of empiricism
 in economics in order to come to conclusions because that way we can run numbers, do studies,
 and essentially overcome internal bias and ideology. Anyhow, I do respect Mr. Friedman and
-he is one of my heros, but his old school thinking leads him to not believe in the minimum
+he is one of my heroes, but his old school thinking leads him to not believe in the minimum
 wage being beneficial. Many more recent studies were published basically replicating
 the Card and Kreuger study and I find this result to confirm that every economist should agree
 to a federal minimum wage of at least $12. I think the proposal to raise it to $15 would
@@ -53,7 +53,7 @@ region. This happens often and monopsonies in our country are exploiting our wor
 today. Mr. Friedman and Mises are both going to be lost in the march of history;
 before it was slave owner and slave, then it was the monarch and the peasant, and
 now it's the captialist and the employee, yet they are defending what is the logical
-extension of unfair and arbitrary power hiearchies that have been present throughout
+extension of unfair and arbitrary power hierarchies that have been present throughout
 history. I am afraid that the capitalist system will logically be swept under the rug
 of time, and that Mises and Milton Friedman both will be remembered as dinosaurs are
 today.
@@ -65,7 +65,7 @@ Thanks for the opening statements! Now the floor goes to our participants.
 .LP
 .B "Mises: "
 It's all the same thing said in different ways, you all seem to think the economy can be organized
-or understood in an emperical or logical way, even though this is clearly not the case! The economy
+or understood in an empirical or logical way, even though this is clearly not the case! The economy
 is made up of extremely complex transactions that form the larger economy. There is no way one
 algorithm or set of studies can ever conclude anything about such a chaotic system!
 
@@ -78,7 +78,7 @@ interested in ideology, and you use any mechanism to push your ideology.
 .LP
 .B "Mises: "
 Ah, but same to you! You choose to study things that you want to craft a narrative about, and
-in economics, and the apperatus of the study can be used to craft any narrative you want, given
+in economics, and the apparatus of the study can be used to craft any narrative you want, given
 that in economics, all the macro statistics may as well be random! The difference is that I don't
 claim to be falsifiable in a logical positivist sense. You do.
 
@@ -106,3 +106,16 @@ goods and services in our economy. This is simply immoral.
 
 .LP
 .B "Paul Krugman: "
+But neoclassical and specifically Keynesian economics explains most phenomenon in economics quite well.
+It's true that there is a consolidating upper class of people that tend to accrue more and more wealth,
+but it is just not true that minimum wage helps with this problem a significant amount of the time.
+You have to look at economic policy from a detached, non-populist perspective in order to gain insight
+about how the economy actually works, instead of capturing a fundamentally biased viewpoint. Additionally,
+this nonsense about progression of history I hear from many thinkers, yet I do not believe at all in
+any particular progression. CEOs making much more than workers is natural in a healthy economy; CEOs have
+more responsibility in terms of how they run a particular business, which is a liability for the CEO, which
+needs to be compensated for in any economy.
+
+.LP
+.B "Milton Friedman: "
+You are quite correct in the sense that
