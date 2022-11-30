@@ -205,10 +205,10 @@ d sub initial = f(t sub {initial})
 d sub final = f(t sub {final})
 .EN
 .EQ
-\[*D]t = f(t sub initial + \[*D]t) - d sub initial
+\[*D]d = f(t sub initial + \[*D]t) - d sub initial
 .EN
 .EQ
-\[*D]t = f(t sub initial + \[*D]t) - f(t sub {initial})
+\[*D]d = f(t sub initial + \[*D]t) - f(t sub {initial})
 .EN
 .EQ
 f'(t) = {f(t sub initial + \[*D]t) - f(t sub {initial})} over \[*D]t
