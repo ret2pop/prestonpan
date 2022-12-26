@@ -45,7 +45,8 @@ coord x 0, 11 y 0, 11
 Now, let's imagine that this point $(3, 2)$ represents a force in a certain direction.
 For example, we can draw a line from the origin to this point and the resulting force's
 magnitude will be represented by the length of the line in question (which can be obtained
-via the pythagorean theorem).
+via the pythagorean theorem), and the direction of the force will be outwards from the origin
+following the line.
 
 .G1
 draw solid
@@ -54,4 +55,17 @@ coord x 0, 11 y 0, 11
 3 2
 "(3, 2)" above at 3,2
 "$sqrt {3 sup 2 + 2 sup 2}$" above at 1,2
+.G2
+
+.PP
+We can now imagine another line segment drawn from the origin $(-1, 3)$, which we can imagine
+to be another force acting in a different direction with a different magnitude:
+
+.G1
+draw solid
+coord x -10, 10 y -10, 10
+0 0
+3 2
+-1 3
+"(3, 2)" above at 3,2
 .G2
