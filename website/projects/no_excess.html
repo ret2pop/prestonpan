@@ -23,4 +23,38 @@ $$START CONTENT
 	<a href="https://git.prestonpan.tech">browse my git frontend</a> for the software
 	names.
 </p>
+
+<h2>Explanation</h2>
+
+<p>
+	This language was made by separating the interpretation into three phases: the tokenization, the parsing, and the visiting.
+	The tokenizer takes the input file and groups characters into structures called tokens. This groups characters together in
+	order to treat things as single objects. For example, the number <i>1582.3</i> should be read as a single number rather than
+	a string of characters.
+</p>
+
+<p>
+	The parser was done via recursive descent. Basically, the parser takes the tokens and converts them into abstract syntax tree
+	nodes. The abstract syntax tree is a hierarchy of data which determines the order of the later execution of the program.
+	It recursively goes through the tokens, trying to find certain patterns in the tokens and identifying them to be certain
+	program objects.
+</p>
+
+<p>
+	During the parsing phase, variables are stored in a hash table and they are set equal to an abstract syntax tree. Later,
+	this table of global variables will be sent to the visitor to be evaluated.
+</p>
+
+<p>
+	After the parsing phase is finished, the visitor phase evaluates the abstract syntax tree. It traverses the tree until it
+	gets to the bottom of it, in which case it returns another abstract syntax tree that corrolates to the value that each node
+	evaluates to. There are several self evaluating types in this language which return themselves when evaluated, and there
+	are others that have different rules for what they evaluate to. This is defined in the visitor.
+</p>
+<p>
+	When a function is evaluated, each function argument is evaluated as well which is then put on a stack of hash tables. In
+	this way, I have programmed a simulated stack frame like ones found in C, and recursion is then possible. Symbols in this
+	language get evaluated to what they are bound to (you can bind symbols to expressions via the `bind` keyword, and local variables
+	also get evaluated in the same way via the stack frame).
+</p>
 $$END CONTENT
