@@ -80,6 +80,15 @@ the website with a primitive templating language/static site generator
 in pure POSIX shell script which generates the website from simpler template
 and data files.
 .BL
+.B "NoExcess"
+\(en
+NoExcess is a fully featured turing complete programming language that I have written.
+It is heavily inspired by scheme, and like scheme, it is a functional programming
+language. It was made to have a simple set of built-in functions, and a builtin
+way to declare variables and functions. Float, integer, boolean, and string datatypes
+are also supported along with the list, function and symbol datatypes, just like
+in other lisp-like languages.
+.BL
 .B "COMAS"
 \(en
 Short for the computer operated math assistance program. It will do extremely
