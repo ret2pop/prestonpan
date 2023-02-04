@@ -27,7 +27,7 @@ find ./website -type d | xargs -I{} mkdir -p "$BUILD_DIR/{}"
 # With all the preparation done, it hands execution over to the process_file script.
 find ./website -type f -exec ./process_file {} \; || exit 1
 
-bash finalize_build.sh
+./finalize_build.sh
 if [ $# -eq 0 ]; then
 	exit 0 # and exits 0 if successful and no commit message was supplied.
 fi

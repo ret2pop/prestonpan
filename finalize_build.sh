@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ROOT_DIR="./build/website/"
 # replace placeholder tags with stuff
