@@ -22,13 +22,13 @@ template_replacement()
 	echo "$r_templates" | while read -r i
 	do
 		# Escapes special characters from line containing $$INCLUDE call
-		keyword_regexp="$(printf '%s' "$i" | -e gsed 's/[]\/$*.^|[]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+		keyword_regexp="$(printf '%s' "$i" | tr '\n' ' '| sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 		r_tname="$TEMPLATE_DIR/$(echo "$i" | cut -d ' ' -f 2).html"
 		# Get contents of file then escapes special characters
 		f_contents="$(cat "$r_tname")"
-		replacement_regexp="$(printf '%s' "$f_contents" | gsed -e 's/[\/&]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+		replacement_regexp="$(printf '%s' "$f_contents" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 		#Finally do the sed replace to replace the $$INCLUDE line with the contents of the included template file
-		gsed -i "s/$keyword_regexp/$replacement_regexp/g" "$TEMPLATE_BUILD_DIR/$(basename "$1")" # BUG: This shit does not work
+		sed -i "s/$keyword_regexp/$replacement_regexp/g" "$TEMPLATE_BUILD_DIR/$(basename "$1")" # BUG: This shit does not work
 		# Then we do it all again on the same file.
 		template_replacement "$1"
 	done
@@ -66,18 +66,18 @@ echo "$vars" | while read -r var;
 do
 	# Get the name of the variable
 	name="$(echo "$var" | cut -d ' ' -f 2 | tr -d '\n')"
-	keyword_regexp="$(printf '%s' "$var" | gsed -e 's/[]\/$*.^|[]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+	keyword_regexp="$(printf '%s' "$var" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 	# Get the endpoint of the variable
 	var_end="\$\$END $name"
-	end_regexp="$(printf '%s' "$var_end" | gsed -e 's/[\/&]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+	end_regexp="$(printf '%s' "$var_end" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 	# Get the value of the variable
 	value="$(< "$BUILD_DIR/$1" gsed -n "/$keyword_regexp/,/$end_regexp/p" "$1")"
-	value_regexp="$(printf '%s' "$value" | gsed -e 's/[]\/$*.^|[]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+	value_regexp="$(printf '%s' "$value" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 	# Get the string to replace
 	replacement="\$\$VAR $name"
-	replacement_regexp="$(printf '%s' "$replacement" | gsed -e 's/[\/&]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+	replacement_regexp="$(printf '%s' "$replacement" | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 	# Then do the replacement
-	gsed -i "s/$replacement_regexp/$value_regexp/g" "$BUILD_DIR/$1" # BUG: Doesn't work on openBSD
+	sed -i "s/$replacement_regexp/$value_regexp/g" "$BUILD_DIR/$1" # BUG: Doesn't work on openBSD
 done
 
 # For some reason I can't trim these inside the loop (i tried) so this works.
@@ -93,8 +93,8 @@ then
 	do
 		name="$(echo "$line" | cut -d ' ' -f 2 | tr -d '\n')"
 		output="$(./"$PLUG_DIR/$name" "$1" "$template")"
-		keyword_regexp="$(printf '%s' "$line" | gsed -e 's/[]\/$*.^|[]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
-		replacement_regexp="$(printf '%s' "$output" | gsed -e 's/[\/&]/\\&/g' | gsed ':a;N;$!ba;s,\n,\\n,g')"
+		keyword_regexp="$(printf '%s' "$line" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
+		replacement_regexp="$(printf '%s' "$output" | tr '\n' ' ' | sed 's/[^\^]/&/g; s/[\^]/\\&/g;' | sed 's/[&/\]/\\&/g')"
 
 		sed -i "s/$keyword_regexp/$replacement_regexp/g" "$BUILD_DIR/$1" # BUG: doesn't work with openBSD
 	done
