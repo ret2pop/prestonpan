@@ -80,6 +80,14 @@ the website with a primitive templating language/static site generator
 in pure POSIX shell script which generates the website from simpler template
 and data files.
 .BL
+.B "Snake3"
+\(en
+Although this was a small project, it showcases my skills at writing man pages in the roff
+format and my ability to come up with novel algorithms, as well as working with threading
+in the C programming language. It's a simple snake game in the terminal that works
+without the curses library. It was also a collaboration with Kai Stevenson: https://kaistevenson.com. You can get
+the source code from https://prestonpan.tech/files/snake3/.
+.BL
 .B "NoExcess"
 \(en
 NoExcess is a fully featured turing complete programming language that I have written.
