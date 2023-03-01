@@ -39,7 +39,7 @@ and as h becomes infinitely small, the resulting derivative is 2x + 1.
 
 .PP
 But we know already that the slope of x was equal to one. You learn that in 9th grade.
-And we know that 2x is the derivative of $x^2$. So it seems like this should be true:
+And we know that 2x is the derivative of $x sup 2$. So it seems like this should be true:
 
 .EQ
 (f + g)' = f' + g'
