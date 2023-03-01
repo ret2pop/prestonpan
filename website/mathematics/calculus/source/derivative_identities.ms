@@ -111,7 +111,7 @@ derivative definition. Here, we will discuss the power rule, or $x sup n$ for an
 integer $n$.
 
 .PP
-If we just plug it into the general form form directly:
+If we just plug it into the general form directly:
 .EQ
 f'(x) = {{(x + h)} sup {n} - {x} sup {n}} over h
 .EN
