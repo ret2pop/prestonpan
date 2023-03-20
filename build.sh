@@ -33,7 +33,7 @@ if [ $# -eq 0 ]; then
 fi
 
 # Change this line if you are a future PSIIan maintaining this.
-rsync -uvrP --delete-after "$BUILD_DIR/website/" root@prestonpan.tech:/var/www/prestonpan
+rsync -uvrP --delete-after "$BUILD_DIR/website/" root@nullring.xyz:/var/www/prestonpan
 git add .
 
 git commit -m "$1"

@@ -29,7 +29,7 @@
 .ps 18
 .B "Preston Pan"
 .ps 10
-https://prestonpan.tech
+https://preston.nullring.xyz
 .TS
 tab(;) nospaces;
 l rx.
@@ -64,7 +64,7 @@ T}
 .B "Note "
 \(en
 .I "All my projects have their respective soure code avaiable at "
-.UL "https://git.prestonpan.tech".
+.UL "https://git.nullring.xyz".
 .BL
 .B "The Null Webring"
 \(en
