@@ -31,6 +31,7 @@
 .ps 10
 https://preston.nullring.xyz
 .TS
+tab(;) nospaces;
 l rx.
 808-Yates St.
 Victoria, V8W 1L8;T{
@@ -43,6 +44,7 @@ T}
 
 .heading "Education"
 .TS
+tab(;) nospaces;
 rW15|lx.
 \m[default]2017 - 2021\m[linecolor];T{
 .B "Sir Winston Churchill Secondary"
@@ -56,6 +58,18 @@ T}
 .br
 T}
 .TE
+
+.heading "Work Experience"
+.TS
+tab(;) nospaces;
+rW15|lx.
+\m[default]March 14, 2023 - now\m[linecolor];T{
+.B "Pan Health Centre"
+\(en Victoria, BC; 778-996-2379
+.br
+.sp .5
+T}
+.TE
 \m[default]
 .heading "Projects"
 .QS
@@ -63,7 +77,6 @@ T}
 \(en
 .I "All my projects have their respective soure code avaiable at "
 .UL "https://git.nullring.xyz".
-.br
 .BL
 .B "The Null Webring"
 \(en
@@ -75,9 +88,8 @@ The Null Webring is a webring that I run which has an associated website: https:
 An organization that I created that focuses on explaining
 science and technology from a satirical-pseudoreligious context,
 with an associated website: https://society.nullring.xyz. I wrote
-the website with a primitive templating language/static site generator
-in pure POSIX shell script which generates the website from simpler template
-and data files.
+the website with a primitive templating language/static site generator that
+I wrote myself.
 .BL
 .B "Snake3"
 \(en
@@ -91,20 +103,31 @@ the source code from https://nullring.xyz/files/snake3/.
 \(en
 NoExcess is a fully featured turing complete programming language that I have written.
 It is heavily inspired by scheme, and like scheme, it is a functional programming
-language. It was made to have a simple set of built-in functions, and a builtin
-way to declare variables and functions. Float, integer, boolean, and string datatypes
-are also supported along with the list, function and symbol datatypes, just like
-in other lisp-like languages.
-.BL
-.B "COMAS"
-\(en
-Short for the computer operated math assistance program. It will do extremely
-complex calculations (operations within quaternionic functional tensors) in the future,
-but right now only quaternions are fully supported. It comes with a clever way to
-represent hyperreal numbers as a non-communatative derivative operator division
-ring.
+language.
+.QE
 
 .heading "Skills"
+.QS
+.BL
+.B "Music"
+\(en
+I've been playing piano for more than 10 years in total, and have been singing as a hobby for most of my life. I have also played the cello for 5 years now.
+Some of my piano improvisation is on my website.
+.BL
+.B "Languages"
+\(en
+I can speak English fluently, as well as Manderin. I can also read and write some traditional chinese.
+.BL
+.B "Social"
+\(en
+I like interacting with people and talking to people, and I would characterize myself as extroverted.
+.BL
+.B "Organization and Cleaning"
+\(en
+I keep my living space very clean and organized and as a result you can expect the same from me in a work environment.
+.QE
+
+.heading "Science and Technology"
 .QS
 .BL
 .B "Systems"
@@ -139,9 +162,4 @@ Aside from the mathematics which is of course a very important skill in physics,
 university level topics such as electrodynamics and kinematics from a multivariable calculus perspective. I am also working
 with two classmates on a completely novel grand unified theory of physics, which will be published on my website when it
 is done.
-.BL
-.B "Music"
-\(en
-I've been playing piano for more than 10 years in total, and have been singing for as long as I can remember.
-Some of my piano improvisation is on my website.
 .QE

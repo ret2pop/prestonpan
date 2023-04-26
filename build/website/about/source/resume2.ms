@@ -29,7 +29,7 @@
 .ps 18
 .B "Preston Pan"
 .ps 10
-https://prestonpan.tech
+https://preston.nullring.xyz
 .TS
 l rx.
 808-Yates St.
@@ -62,7 +62,8 @@ T}
 .B "Note "
 \(en
 .I "All my projects have their respective soure code avaiable at "
-.UL "https://git.prestonpan.tech".
+.UL "https://git.nullring.xyz".
+.br
 .BL
 .B "The Null Webring"
 \(en
@@ -84,7 +85,7 @@ Although this was a small project, it showcases my skills at writing man pages i
 format and my ability to come up with novel algorithms, as well as working with threading
 in the C programming language. It's a simple snake game in the terminal that works
 without the curses library. It was also a collaboration with Kai Stevenson: https://kaistevenson.com. You can get
-the source code from https://prestonpan.tech/files/snake3/.
+the source code from https://nullring.xyz/files/snake3/.
 .BL
 .B "NoExcess"
 \(en
