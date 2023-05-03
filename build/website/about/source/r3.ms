@@ -159,7 +159,5 @@ and ordinary differential equations, among other topics).
 .B "Physics"
 \(en
 Aside from the mathematics which is of course a very important skill in physics, I have done self study on many advanced
-university level topics such as electrodynamics and kinematics from a multivariable calculus perspective. I am also working
-with two classmates on a completely novel grand unified theory of physics, which will be published on my website when it
-is done.
+university level topics such as electrodynamics and kinematics from a multivariable calculus perspective.
 .QE
