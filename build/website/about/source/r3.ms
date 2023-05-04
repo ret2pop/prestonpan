@@ -65,7 +65,7 @@ tab(;) nospaces;
 rW15|lx.
 \m[default]March 14, 2023 - now\m[linecolor];T{
 .B "Pan Health Centre"
-\(en Victoria, BC; 778-996-2379
+\(en Victoria, BC - Cleaning rooms and front desk; 778-996-2379
 .br
 .sp .5
 T}
@@ -85,11 +85,11 @@ The Null Webring is a webring that I run which has an associated website: https:
 .BL
 .B "The Null Identity"
 \(en
-An organization that I created that focuses on explaining
+An organization that that focuses on explaining
 science and technology from a satirical-pseudoreligious context,
-with an associated website: https://society.nullring.xyz. I wrote
-the website with a primitive templating language/static site generator that
-I wrote myself.
+with an associated website: https://society.nullring.xyz. The website
+was made with a primitive templating language/static site generator that
+was made by myself.
 .BL
 .B "Snake3"
 \(en
@@ -101,7 +101,7 @@ the source code from https://nullring.xyz/files/snake3/.
 .BL
 .B "NoExcess"
 \(en
-NoExcess is a fully featured turing complete programming language that I have written.
+NoExcess is a fully featured turing complete programming language.
 It is heavily inspired by scheme, and like scheme, it is a functional programming
 language.
 .QE
@@ -111,12 +111,12 @@ language.
 .BL
 .B "Music"
 \(en
-I've been playing piano for more than 10 years in total, and have been singing as a hobby for most of my life. I have also played the cello for 5 years now.
+Played piano for more than 10 years in total, have been singing as a hobby for much of that time, and played the cello for 5 years.
 Some of my piano improvisation is on my website.
 .BL
 .B "Languages"
 \(en
-I can speak English fluently, as well as Manderin. I can also read and write some traditional chinese.
+Speaks English fluently, as well as Manderin. Also reads and writes some traditional chinese.
 .BL
 .B "Social"
 \(en
@@ -137,13 +137,13 @@ as daily drivers on my personal machine and as servers.
 .BL
 .B "Sysadmining"
 \(en
-I sysadmin my own server where I host multiple websites, an email server, git server, and more. As a result, I have knowledge
+Sysadmining my own server where I host multiple websites, an email server, git server, and more. Having knowledge
 of many standard tools for sysadmining (docker, ssh, common servers and daemons) and have knowledge of many different operating
 systems.
 .BL
 .B "Programming Languages"
 \(en
-I have good knowledge of c, python, shell, x86 assembly, and HTML/css/Javascript.
+Knowledge of c, python, shell, x86 assembly, and HTML/css/Javascript.
 .BL
 .B "Development tools"
 \(en
@@ -152,12 +152,12 @@ as well as writing papers in LaTeX and roff.
 .BL
 .B "Mathematics"
 \(en
-I have knowledge of mathematics up to about a 3rd year university level due to self study, and have gotten distinction in mathematics
+Knowledge of mathematics up to about a 3rd year university level due to self study, and have gotten distinction in mathematics
 contests such as the Fermat Waterloo math competition (knowledge of multivariable calculus, linear algebra, discrete mathematics,
 and ordinary differential equations, among other topics).
 .BL
 .B "Physics"
 \(en
-Aside from the mathematics which is of course a very important skill in physics, I have done self study on many advanced
+Self study on many advanced
 university level topics such as electrodynamics and kinematics from a multivariable calculus perspective.
 .QE
